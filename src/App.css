@@ -1,0 +1,38 @@
+@import-normalize;
+
+body {
+  padding-top: 50px;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer {
+  margin-top: 20px;
+  font-size: 50px;
+}
+
+.button {
+  min-width: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 8px 15px;
+  border: 1px solid #808080;
+  border-radius: 20px;
+  background-color: #84a5ff;
+  cursor: pointer;
+  transition: color 250ms, background-color 250ms;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #1f41a0;
+  color: #fff;
+}
+
+.button:disabled {
+  background-color: #bbbbbb;
+  color: #666666;
+}
