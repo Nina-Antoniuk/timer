@@ -14,11 +14,15 @@ body {
   font-size: 50px;
 }
 
+.buttonContainer {
+  display: flex;
+  min-width: 300px;
+  justify-content: space-between;
+}
+
 .button {
-  min-width: 80px;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 8px 15px;
+  flex-basis: calc((100% - 40px) / 4);
+  padding: 8px 0;
   border: 1px solid #808080;
   border-radius: 20px;
   background-color: #84a5ff;
@@ -35,4 +39,14 @@ body {
 .button:disabled {
   background-color: #bbbbbb;
   color: #666666;
+}
+
+@media screen and (min-width: 768px) {
+  .buttonContainer {
+    justify-content: space-around;
+    min-width: 400px;
+  }
+  .button {
+    flex-basis: calc((100% - 100px) / 4);
+  }
 }

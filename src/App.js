@@ -55,7 +55,7 @@ function App() {
     <div className="App">
       <h1>Timer</h1>
       <p className="timer">{new Date(time).toISOString().slice(11, 19)}</p>
-      <div>
+      <div className="buttonContainer">
         <button
           className="button"
           id="startBtn"
